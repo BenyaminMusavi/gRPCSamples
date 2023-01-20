@@ -1,0 +1,14 @@
+1. install go lang
+
+2. go install github.com/fullstorydev/grpcurl/cmd/grpcurl@lates
+cmd => grpcurl --help
+need to vpn
+
+3. reflection
+
+grpcurl localhost:7151 list 
+grpcurl localhost:7151 list {serviceName}
+
+4. go install github.com/fullstorydev/grpcui/cmd/grpcui@latest
+grpcui localhost:7151
+
