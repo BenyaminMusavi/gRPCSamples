@@ -1,9 +1,9 @@
 ﻿using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
-using GrpcSample.Web.Protos;
-using static GrpcSample.Web.Protos.PersonService;
+using GrpcSample.Web.Protos.v1;
+using static GrpcSample.Web.Protos.v1.PersonService;
 
-namespace GrpcSample.Web.Services;
+namespace GrpcSample.Web.Services.v1;
 
 public class PersonGrpcService : PersonServiceBase
 {
@@ -77,7 +77,7 @@ public class PersonGrpcService : PersonServiceBase
     public override async Task<PersonReply> GetPersonById(PersonByIdRequest request, ServerCallContext context)
     {
         throw new InvalidTimeZoneException("This Is My Invalid Timezoon Exception");
-        var personForResponse = _people.Where(c => c.ID == request.ID).FirstOrDefault();
+        var personForResponse = _people.Where(c => c.Id == request.Id).FirstOrDefault();
 
         if (personForResponse != null)
             return personForResponse;

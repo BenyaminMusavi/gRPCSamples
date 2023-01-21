@@ -743,11 +743,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\gRPCSample\\GrpcSample\\GrpcSample.Web\\GrpcSample.Web.csproj",
+      "projectUniqueName": "D:\\grpcSamples\\GrpcSample.Web\\GrpcSample.Web.csproj",
       "projectName": "GrpcSample.Web",
-      "projectPath": "D:\\gRPCSample\\GrpcSample\\GrpcSample.Web\\GrpcSample.Web.csproj",
+      "projectPath": "D:\\grpcSamples\\GrpcSample.Web\\GrpcSample.Web.csproj",
       "packagesPath": "C:\\Users\\Benyamin\\.nuget\\packages\\",
-      "outputPath": "D:\\gRPCSample\\GrpcSample\\GrpcSample.Web\\obj\\",
+      "outputPath": "D:\\grpcSamples\\GrpcSample.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
