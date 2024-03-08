@@ -23,3 +23,6 @@ and import in ItemGroup
     <None Remove="Protos\v1\PersonService.proto" />
     <None Remove="Protos\v2\PersonService.proto" />
   </ItemGroup>
+
+  ===============================================
+  right click GrpcClientSample.Console => Add => Service refrence => gRPC => 
