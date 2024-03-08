@@ -1,4 +1,4 @@
-using GrpcSample.Web.Infrastructures;
+﻿using GrpcSample.Web.Infrastructures;
 using GrpcSample.Web.Interceptors;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,7 +6,7 @@ builder.Services.AddSingleton<ProtoFileProvider>();
 
 builder.Services.AddGrpc(options =>
 {
-    options.EnableDetailedErrors = true;
+    options.EnableDetailedErrors = true; // نمایش خطای Exception
     options.Interceptors.Add<ExceptionInterceptor>();
 });
 builder.Services.AddGrpcReflection();

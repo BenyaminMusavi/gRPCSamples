@@ -76,12 +76,24 @@ public class PersonGrpcService : PersonServiceBase
 
     public override async Task<PersonReply> GetPersonById(PersonByIdRequest request, ServerCallContext context)
     {
-        throw new InvalidTimeZoneException("This Is My Invalid Timezoon Exception");
+        //try
+        //{
+        throw new InvalidTimeZoneException("This Is My Invalid Timezoon Exception"); // نمایش Unknown
         var personForResponse = _people.Where(c => c.Id == request.Id).FirstOrDefault();
 
         if (personForResponse != null)
             return personForResponse;
         throw new RpcException(new Status(StatusCode.NotFound, $"Person with ID {request.Id} Not Found"), "Person Not Found Servier Layer");
+        //}
+        //catch (Exception ex)
+        //{
+        //    var correlationId = Guid.NewGuid();
+        //    //log using correlation Id
+
+        //    Metadata trailers = new();
+        //    trailers.Add("correlationId", correlationId.ToString());
+        //    throw new RpcException(new Status(StatusCode.Internal, "This is my invalid timezoon exception"), trailers, "Serverside Exception Message");
+        //}
 
     }
 }

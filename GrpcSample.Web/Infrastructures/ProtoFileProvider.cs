@@ -33,3 +33,7 @@ public class ProtoFileProvider
         return exists ? filePath : string.Empty;
     }
 }
+
+//https:localhost:1010/Protos/v2
+//download=> https:localhost:1010/Protos/v2/PersonService.proto
+//view=> https:localhost:1010/Protos/v2/PersonService.proto/view

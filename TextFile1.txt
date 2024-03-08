@@ -12,3 +12,14 @@ grpcurl localhost:7151 list {serviceName}
 4. go install github.com/fullstorydev/grpcui/cmd/grpcui@latest
 grpcui localhost:7151
 
+========================================================
+
+grpcSamples\GrpcSample.Web\obj\Debug\net6.0\Protos
+delete => Greet & GreetGrpc 
+
+and import in ItemGroup 
+
+  <ItemGroup>
+    <None Remove="Protos\v1\PersonService.proto" />
+    <None Remove="Protos\v2\PersonService.proto" />
+  </ItemGroup>

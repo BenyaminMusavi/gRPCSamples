@@ -81,7 +81,7 @@ public class PersonGrpcService : PersonServiceBase
 
         if (personForResponse != null)
             return personForResponse;
-        throw new RpcException(new Status(StatusCode.NotFound, $"Person with ID {request.Id} Not Found"), "Person Not Found Servier Layer");
+        throw new RpcException(new Status(StatusCode.NotFound, $"Person with ID {request.Id} Not Found"), "Person Not Found Server Layer");
 
     }
 }
